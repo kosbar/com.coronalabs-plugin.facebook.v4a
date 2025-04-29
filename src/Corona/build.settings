@@ -23,6 +23,8 @@ settings =
 		xcassets = "Images.xcassets",
 		plist =
 		{
+			NSUserTrackingUsageDescription = "We collect this data to make ads more personalized, eliminate inappropriate ads, and improve the app experience.",
+
 			CFBundleURLTypes =
 			{
 				{
@@ -89,6 +91,16 @@ settings =
 
 	plugins =
 	{
+		['plugin.att'] =
+		{
+			publisherId= 'com.solar2d',
+			supportedPlatforms=
+			{
+				iphone= true,
+				["iphone-sim"]= true
+			}
+		},
+
         ["plugin.facebook.v4a"] =
         {
             publisherId = "com.coronalabs",
