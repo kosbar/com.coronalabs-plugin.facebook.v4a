@@ -68,7 +68,8 @@
 		DB8A23D02D0A9D40005B1A05 /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A23C52D0A9D40005B1A05 /* FBAEMKit.xcframework */; };
 		E640B2F21BFC00B00031FAE9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E640B2F11BFC00B00031FAE9 /* AssetsLibrary.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E640B2F41BFC00BA0031FAE9 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E640B2F31BFC00BA0031FAE9 /* Photos.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		F51C66D61EE0D3B20040E4BE /* libplugin_facebook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E253E2166DE7C800DCDC2C /* libplugin_facebook.a */; };
+		E8E701172DC0DD590023C218 /* libplugin_att.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E701162DC0DD470023C218 /* libplugin_att.a */; };
+		F51C66D61EE0D3B20040E4BE /* libplugin_facebook_v4a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E253E2166DE7C800DCDC2C /* libplugin_facebook_v4a.a */; };
 		F56457D91FA108F500EC8C29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56712391F73451B006B502D /* Images.xcassets */; };
 		F580EDA22A9C66F600D771CD /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F580EDA12A9C66F600D771CD /* SafariServices.framework */; };
 		F580EDA42A9C673C00D771CD /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F580EDA32A9C673B00D771CD /* AuthenticationServices.framework */; };
@@ -162,6 +163,7 @@
 		DB8A23CA2D0A9D40005B1A05 /* FBSDKShareKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; name = FBSDKShareKit.xcframework; path = EmbeddedFrameworks/FBSDKShareKit.xcframework; sourceTree = "<group>"; };
 		E640B2F11BFC00B00031FAE9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		E640B2F31BFC00BA0031FAE9 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		E8E701162DC0DD470023C218 /* libplugin_att.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libplugin_att.a; path = libs/libplugin_att.a; sourceTree = "<group>"; };
 		F54A40BD1EE07F9100AF417D /* build.settings */ = {isa = PBXFileReference; lastKnownFileType = text; name = build.settings; path = ../Corona/build.settings; sourceTree = "<group>"; };
 		F54A40BE1EE07F9100AF417D /* config.lua */ = {isa = PBXFileReference; lastKnownFileType = text; name = config.lua; path = ../Corona/config.lua; sourceTree = "<group>"; };
 		F55829801ED23E1200E5808C /* CoronaApp.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CoronaApp.xcconfig; sourceTree = "<group>"; };
@@ -178,7 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F51C66D61EE0D3B20040E4BE /* libplugin_facebook.a in Frameworks */,
+				F51C66D61EE0D3B20040E4BE /* libplugin_facebook_v4a.a in Frameworks */,
 				E640B2F41BFC00BA0031FAE9 /* Photos.framework in Frameworks */,
 				F580EDA22A9C66F600D771CD /* SafariServices.framework in Frameworks */,
 				E640B2F21BFC00B00031FAE9 /* AssetsLibrary.framework in Frameworks */,
@@ -210,6 +212,7 @@
 				A484118015128D5D0074BD57 /* ImageIO.framework in Frameworks */,
 				A484118115128D5D0074BD57 /* libobjc.dylib in Frameworks */,
 				A48411CA15129F610074BD57 /* libsqlite3.dylib in Frameworks */,
+				E8E701172DC0DD590023C218 /* libplugin_att.a in Frameworks */,
 				A484118215128D5D0074BD57 /* MapKit.framework in Frameworks */,
 				A484118315128D5D0074BD57 /* MediaPlayer.framework in Frameworks */,
 				A484118415128D5D0074BD57 /* MessageUI.framework in Frameworks */,
@@ -277,6 +280,7 @@
 		A484111C15114F700074BD57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E8E701162DC0DD470023C218 /* libplugin_att.a */,
 				F580EDA32A9C673B00D771CD /* AuthenticationServices.framework */,
 				F580EDA12A9C66F600D771CD /* SafariServices.framework */,
 				DB84F99227975EA700892C2E /* Accelerate.framework */,
@@ -348,7 +352,7 @@
 		A4E253DB166DE7C800DCDC2C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4E253E2166DE7C800DCDC2C /* libplugin_facebook.a */,
+				A4E253E2166DE7C800DCDC2C /* libplugin_facebook_v4a.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -423,10 +427,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		A4E253E2166DE7C800DCDC2C /* libplugin_facebook.a */ = {
+		A4E253E2166DE7C800DCDC2C /* libplugin_facebook_v4a.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libplugin_facebook.a;
+			path = libplugin_facebook_v4a.a;
 			remoteRef = A4E253E1166DE7C800DCDC2C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -526,7 +530,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\nBUILDER_PATH=\"$CORONA_ROOT\"/Corona/mac/bin/CoronaBuilder.app/Contents/MacOS/CoronaBuilder\n\n\"$BUILDER_PATH\" plugins download ios \"$PROJECT_DIR/../Corona/build.settings\" \"$PROJECT_DIR/CoronaApp.xcconfig\" $CORONA_FORCE_LOAD\n\nif [ $? -ne 0 ]\nthen\n    echo \"Exiting due to errors (above)\"\n    exit -1\nfi\n\ntouch \"$SRCROOT/../Corona\"";
+			shellScript = "\nBUILDER_PATH=\"$CORONA_ROOT\"/Corona/mac/bin/CoronaBuilder.app/Contents/MacOS/CoronaBuilder\n\n\"$BUILDER_PATH\" plugins download ios \"$PROJECT_DIR/../Corona/build.settings\" \"$PROJECT_DIR/CoronaApp.xcconfig\" $CORONA_FORCE_LOAD\n\nif [ $? -ne 0 ]\nthen\n    echo \"Exiting due to errors (above)\"\n    exit -1\nfi\n\ntouch \"$SRCROOT/../Corona\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -682,10 +686,14 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.coronalabs.facebook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -717,10 +725,14 @@
 				GCC_PREFIX_HEADER = Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.coronalabs.facebook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
