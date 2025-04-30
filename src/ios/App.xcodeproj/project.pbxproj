@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -60,15 +60,11 @@
 		C22C1E4B1E981D9000D74196 /* LaunchScreen.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = C22C1E4A1E981D9000D74196 /* LaunchScreen.storyboardc */; };
 		DB84F99127975E2D00892C2E /* blank.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB84F99027975E2D00892C2E /* blank.swift */; };
 		DB84F99327975EA700892C2E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB84F99227975EA700892C2E /* Accelerate.framework */; };
-		DB8A23CB2D0A9D40005B1A05 /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A23CA2D0A9D40005B1A05 /* FBSDKShareKit.xcframework */; };
-		DB8A23CC2D0A9D40005B1A05 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A23C62D0A9D40005B1A05 /* FBSDKCoreKit.xcframework */; };
-		DB8A23CD2D0A9D40005B1A05 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A23C72D0A9D40005B1A05 /* FBSDKCoreKit_Basics.xcframework */; };
-		DB8A23CE2D0A9D40005B1A05 /* FBSDKGamingServicesKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A23C82D0A9D40005B1A05 /* FBSDKGamingServicesKit.xcframework */; };
-		DB8A23CF2D0A9D40005B1A05 /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A23C92D0A9D40005B1A05 /* FBSDKLoginKit.xcframework */; };
-		DB8A23D02D0A9D40005B1A05 /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A23C52D0A9D40005B1A05 /* FBAEMKit.xcframework */; };
 		E640B2F21BFC00B00031FAE9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E640B2F11BFC00B00031FAE9 /* AssetsLibrary.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E640B2F41BFC00BA0031FAE9 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E640B2F31BFC00BA0031FAE9 /* Photos.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E8E701172DC0DD590023C218 /* libplugin_att.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E701162DC0DD470023C218 /* libplugin_att.a */; };
+		E8E701242DC1FAB20023C218 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E701232DC1FAB20023C218 /* AppTrackingTransparency.framework */; };
+		E8E701262DC1FB2D0023C218 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E701252DC1FB2D0023C218 /* AdSupport.framework */; };
 		F51C66D61EE0D3B20040E4BE /* libplugin_facebook_v4a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E253E2166DE7C800DCDC2C /* libplugin_facebook_v4a.a */; };
 		F56457D91FA108F500EC8C29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56712391F73451B006B502D /* Images.xcassets */; };
 		F580EDA22A9C66F600D771CD /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F580EDA12A9C66F600D771CD /* SafariServices.framework */; };
@@ -109,6 +105,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B9E7424D5B5913A9926C84A /* Pods-Corona_Fb_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corona_Fb_App.debug.xcconfig"; path = "Target Support Files/Pods-Corona_Fb_App/Pods-Corona_Fb_App.debug.xcconfig"; sourceTree = "<group>"; };
+		63D1B7E8041A2EB7F839C364 /* Pods_Corona_Fb_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Corona_Fb_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		652FF91DA7F0A22B5EFE860E /* Pods-Corona_Fb_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corona_Fb_App.release.xcconfig"; path = "Target Support Files/Pods-Corona_Fb_App/Pods-Corona_Fb_App.release.xcconfig"; sourceTree = "<group>"; };
 		A447B60E165D72FB009EA762 /* AppCoronaDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCoronaDelegate.h; sourceTree = SOURCE_ROOT; };
 		A447B60F165D72FB009EA762 /* AppCoronaDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppCoronaDelegate.mm; sourceTree = SOURCE_ROOT; };
 		A447B6641666FD02009EA762 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Corona/ios/resource/MainWindow-iPad.xib"; sourceTree = "<group>"; };
@@ -155,15 +154,11 @@
 		C277D3B51EBB9F8E00966BA1 /* _CoronaSplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _CoronaSplashScreen.png; sourceTree = "<group>"; };
 		DB84F99027975E2D00892C2E /* blank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blank.swift; sourceTree = "<group>"; };
 		DB84F99227975EA700892C2E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		DB8A23C52D0A9D40005B1A05 /* FBAEMKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; name = FBAEMKit.xcframework; path = EmbeddedFrameworks/FBAEMKit.xcframework; sourceTree = "<group>"; };
-		DB8A23C62D0A9D40005B1A05 /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit.xcframework; path = EmbeddedFrameworks/FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
-		DB8A23C72D0A9D40005B1A05 /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit_Basics.xcframework; path = EmbeddedFrameworks/FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
-		DB8A23C82D0A9D40005B1A05 /* FBSDKGamingServicesKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; name = FBSDKGamingServicesKit.xcframework; path = EmbeddedFrameworks/FBSDKGamingServicesKit.xcframework; sourceTree = "<group>"; };
-		DB8A23C92D0A9D40005B1A05 /* FBSDKLoginKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; name = FBSDKLoginKit.xcframework; path = EmbeddedFrameworks/FBSDKLoginKit.xcframework; sourceTree = "<group>"; };
-		DB8A23CA2D0A9D40005B1A05 /* FBSDKShareKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; name = FBSDKShareKit.xcframework; path = EmbeddedFrameworks/FBSDKShareKit.xcframework; sourceTree = "<group>"; };
 		E640B2F11BFC00B00031FAE9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		E640B2F31BFC00BA0031FAE9 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		E8E701162DC0DD470023C218 /* libplugin_att.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libplugin_att.a; path = libs/libplugin_att.a; sourceTree = "<group>"; };
+		E8E701232DC1FAB20023C218 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		E8E701252DC1FB2D0023C218 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		F54A40BD1EE07F9100AF417D /* build.settings */ = {isa = PBXFileReference; lastKnownFileType = text; name = build.settings; path = ../Corona/build.settings; sourceTree = "<group>"; };
 		F54A40BE1EE07F9100AF417D /* config.lua */ = {isa = PBXFileReference; lastKnownFileType = text; name = config.lua; path = ../Corona/config.lua; sourceTree = "<group>"; };
 		F55829801ED23E1200E5808C /* CoronaApp.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CoronaApp.xcconfig; sourceTree = "<group>"; };
@@ -185,6 +180,7 @@
 				F580EDA22A9C66F600D771CD /* SafariServices.framework in Frameworks */,
 				E640B2F21BFC00B00031FAE9 /* AssetsLibrary.framework in Frameworks */,
 				DB84F99327975EA700892C2E /* Accelerate.framework in Frameworks */,
+				E8E701262DC1FB2D0023C218 /* AdSupport.framework in Frameworks */,
 				F5BB41531BC42ACF0033F6FA /* CoreText.framework in Frameworks */,
 				A46885F418068C2900381941 /* CoreVideo.framework in Frameworks */,
 				A46885F218068C2200381941 /* GLKit.framework in Frameworks */,
@@ -195,12 +191,6 @@
 				A484117915128D5D0074BD57 /* AudioToolbox.framework in Frameworks */,
 				A484117A15128D5D0074BD57 /* AVFoundation.framework in Frameworks */,
 				A484117B15128D5D0074BD57 /* CFNetwork.framework in Frameworks */,
-				DB8A23CB2D0A9D40005B1A05 /* FBSDKShareKit.xcframework in Frameworks */,
-				DB8A23CC2D0A9D40005B1A05 /* FBSDKCoreKit.xcframework in Frameworks */,
-				DB8A23CD2D0A9D40005B1A05 /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
-				DB8A23CE2D0A9D40005B1A05 /* FBSDKGamingServicesKit.xcframework in Frameworks */,
-				DB8A23CF2D0A9D40005B1A05 /* FBSDKLoginKit.xcframework in Frameworks */,
-				DB8A23D02D0A9D40005B1A05 /* FBAEMKit.xcframework in Frameworks */,
 				A484112215114F700074BD57 /* CoreGraphics.framework in Frameworks */,
 				A484117C15128D5D0074BD57 /* CoreLocation.framework in Frameworks */,
 				A484117D15128D5D0074BD57 /* CoreMedia.framework in Frameworks */,
@@ -211,6 +201,7 @@
 				F5E548091BE7FF0200091810 /* GameController.framework in Frameworks */,
 				A484118015128D5D0074BD57 /* ImageIO.framework in Frameworks */,
 				A484118115128D5D0074BD57 /* libobjc.dylib in Frameworks */,
+				E8E701242DC1FAB20023C218 /* AppTrackingTransparency.framework in Frameworks */,
 				A48411CA15129F610074BD57 /* libsqlite3.dylib in Frameworks */,
 				E8E701172DC0DD590023C218 /* libplugin_att.a in Frameworks */,
 				A484118215128D5D0074BD57 /* MapKit.framework in Frameworks */,
@@ -230,6 +221,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F50A052D837883BB70764FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B9E7424D5B5913A9926C84A /* Pods-Corona_Fb_App.debug.xcconfig */,
+				652FF91DA7F0A22B5EFE860E /* Pods-Corona_Fb_App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A447B66F16670015009EA762 /* CoronaNative */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,12 +253,6 @@
 		A484110E15114F700074BD57 = {
 			isa = PBXGroup;
 			children = (
-				DB8A23C52D0A9D40005B1A05 /* FBAEMKit.xcframework */,
-				DB8A23C62D0A9D40005B1A05 /* FBSDKCoreKit.xcframework */,
-				DB8A23C72D0A9D40005B1A05 /* FBSDKCoreKit_Basics.xcframework */,
-				DB8A23C82D0A9D40005B1A05 /* FBSDKGamingServicesKit.xcframework */,
-				DB8A23C92D0A9D40005B1A05 /* FBSDKLoginKit.xcframework */,
-				DB8A23CA2D0A9D40005B1A05 /* FBSDKShareKit.xcframework */,
 				DB84F99027975E2D00892C2E /* blank.swift */,
 				A4E253DA166DE7C800DCDC2C /* Plugin.xcodeproj */,
 				A484112715114F700074BD57 /* App */,
@@ -266,6 +260,7 @@
 				A447B66F16670015009EA762 /* CoronaNative */,
 				A484111C15114F700074BD57 /* Frameworks */,
 				A484111A15114F700074BD57 /* Products */,
+				6F50A052D837883BB70764FA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -280,6 +275,8 @@
 		A484111C15114F700074BD57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E8E701252DC1FB2D0023C218 /* AdSupport.framework */,
+				E8E701232DC1FAB20023C218 /* AppTrackingTransparency.framework */,
 				E8E701162DC0DD470023C218 /* libplugin_att.a */,
 				F580EDA32A9C673B00D771CD /* AuthenticationServices.framework */,
 				F580EDA12A9C66F600D771CD /* SafariServices.framework */,
@@ -317,6 +314,7 @@
 				A484117615128D5D0074BD57 /* SystemConfiguration.framework */,
 				A4E2537E166AE3DC00DCDC2C /* Twitter.framework */,
 				A484111D15114F700074BD57 /* UIKit.framework */,
+				63D1B7E8041A2EB7F839C364 /* Pods_Corona_Fb_App.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -364,6 +362,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A484114215114F700074BD57 /* Build configuration list for PBXNativeTarget "Corona_Fb_App" */;
 			buildPhases = (
+				384FACCDE47C5761C82C9A4F /* [CP] Check Pods Manifest.lock */,
 				C28A3B451EE9F8FD00F08609 /* Corona Native */,
 				A484111715114F700074BD57 /* Resources */,
 				A484111515114F700074BD57 /* Sources */,
@@ -372,6 +371,7 @@
 				A484118B15128E320074BD57 /* build.settings to Info.plist */,
 				A484119015129A930074BD57 /* Touch main.mm to ensure build */,
 				DBB6F7E6283D7A93005DB1FA /* Embed Frameworks */,
+				755C7E90A33B4EFB7F81B052 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -455,6 +455,56 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		384FACCDE47C5761C82C9A4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Corona_Fb_App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		755C7E90A33B4EFB7F81B052 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Corona_Fb_App/Pods-Corona_Fb_App-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAEMKit/FBAEMKit.framework/FBAEMKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/FBSDKCoreKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics.framework/FBSDKCoreKit_Basics",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKGamingServicesKit/FBSDKGamingServicesKit.framework/FBSDKGamingServicesKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework/FBSDKLoginKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKShareKit/FBSDKShareKit.framework/FBSDKShareKit",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAEMKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit_Basics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKGamingServicesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Corona_Fb_App/Pods-Corona_Fb_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A4841162151268030074BD57 /* Compile Corona Project */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -746,7 +796,6 @@
 		};
 		F597AC701ED8CA3E0085F5E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F572F8191EE06E45001BC814 /* CoronaNative.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				DEVELOPMENT_TEAM = BG2J43EA88;
@@ -756,7 +805,6 @@
 		};
 		F597AC711ED8CA3E0085F5E5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F572F8191EE06E45001BC814 /* CoronaNative.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				DEVELOPMENT_TEAM = BG2J43EA88;

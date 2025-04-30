@@ -1,0 +1,25 @@
+# use_frameworks!
+
+workspace 'App'
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+
+def plugin_pods
+  podspec :path => 'Plugin.podspec'
+end
+
+target 'Corona_Fb_App' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  project 'App.xcodeproj'
+  # Pods for Corona_Fb_App
+  plugin_pods
+end
+
+target 'plugin_facebook' do
+  use_frameworks!
+  project 'Plugin.xcodeproj'
+  plugin_pods
+end

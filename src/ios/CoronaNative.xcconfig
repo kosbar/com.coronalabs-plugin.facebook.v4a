@@ -1,4 +1,5 @@
 // This file contains basic setup for Corona Native apps and plugins
+#include "Pods/Target Support Files/Pods-plugin_facebook/Pods-plugin_facebook.debug.xcconfig"
 
 CORONA_ROOT=$HOME/Library/Application Support/Corona/Native
 

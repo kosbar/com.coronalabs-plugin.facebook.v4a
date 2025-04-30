@@ -3,16 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB8A23BF2D0A9D38005B1A05 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A23BB2D0A9D38005B1A05 /* FBSDKCoreKit_Basics.xcframework */; };
-		DB8A23C02D0A9D38005B1A05 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A23BA2D0A9D38005B1A05 /* FBSDKCoreKit.xcframework */; };
-		DB8A23C12D0A9D38005B1A05 /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A23BD2D0A9D38005B1A05 /* FBSDKLoginKit.xcframework */; };
-		DB8A23C22D0A9D38005B1A05 /* FBSDKGamingServicesKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A23BC2D0A9D38005B1A05 /* FBSDKGamingServicesKit.xcframework */; };
-		DB8A23C32D0A9D38005B1A05 /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A23B92D0A9D38005B1A05 /* FBAEMKit.xcframework */; };
-		DB8A23C42D0A9D38005B1A05 /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A23BE2D0A9D38005B1A05 /* FBSDKShareKit.xcframework */; };
+		091E300E6914F5925F9F5DA9 /* Pods_plugin_facebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167E1423368743026B287F12 /* Pods_plugin_facebook.framework */; };
 		F56B879A2370D5770091376E /* FacebookLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C32EB1E203B222E00E81325 /* FacebookLibrary.cpp */; };
 		F56B879B2370D5770091376E /* FBConnect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C32EB20203B222E00E81325 /* FBConnect.cpp */; };
 		F56B879C2370D5770091376E /* FBConnectEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C32EB22203B222E00E81325 /* FBConnectEvent.cpp */; };
@@ -33,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1110CE2953F6A7AE013EE229 /* Pods-plugin_facebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plugin_facebook.release.xcconfig"; path = "Target Support Files/Pods-plugin_facebook/Pods-plugin_facebook.release.xcconfig"; sourceTree = "<group>"; };
+		167E1423368743026B287F12 /* Pods_plugin_facebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plugin_facebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C32EAFC203B211100E81325 /* CoronaFacebookDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CoronaFacebookDelegate.mm; path = Plugin/CoronaFacebookDelegate.mm; sourceTree = "<group>"; };
 		1C32EAFD203B211100E81325 /* IOSFBConnect.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = IOSFBConnect.mm; path = Plugin/IOSFBConnect.mm; sourceTree = "<group>"; };
 		1C32EAFE203B211100E81325 /* IOSFBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOSFBConnect.h; path = Plugin/IOSFBConnect.h; sourceTree = "<group>"; };
@@ -43,13 +40,8 @@
 		1C32EB21203B222E00E81325 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
 		1C32EB22203B222E00E81325 /* FBConnectEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FBConnectEvent.cpp; sourceTree = "<group>"; };
 		1C32EB23203B222E00E81325 /* FBConnectEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnectEvent.h; sourceTree = "<group>"; };
+		32DBE47E41ED57A8B1E0F1D0 /* Pods-plugin_facebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plugin_facebook.debug.xcconfig"; path = "Target Support Files/Pods-plugin_facebook/Pods-plugin_facebook.debug.xcconfig"; sourceTree = "<group>"; };
 		A4E253B6166D6FB300DCDC2C /* libplugin_facebook_v4a.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libplugin_facebook_v4a.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB8A23B92D0A9D38005B1A05 /* FBAEMKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; name = FBAEMKit.xcframework; path = EmbeddedFrameworks/FBAEMKit.xcframework; sourceTree = "<group>"; };
-		DB8A23BA2D0A9D38005B1A05 /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit.xcframework; path = EmbeddedFrameworks/FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
-		DB8A23BB2D0A9D38005B1A05 /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit_Basics.xcframework; path = EmbeddedFrameworks/FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
-		DB8A23BC2D0A9D38005B1A05 /* FBSDKGamingServicesKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; name = FBSDKGamingServicesKit.xcframework; path = EmbeddedFrameworks/FBSDKGamingServicesKit.xcframework; sourceTree = "<group>"; };
-		DB8A23BD2D0A9D38005B1A05 /* FBSDKLoginKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; name = FBSDKLoginKit.xcframework; path = EmbeddedFrameworks/FBSDKLoginKit.xcframework; sourceTree = "<group>"; };
-		DB8A23BE2D0A9D38005B1A05 /* FBSDKShareKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; name = FBSDKShareKit.xcframework; path = EmbeddedFrameworks/FBSDKShareKit.xcframework; sourceTree = "<group>"; };
 		F56B87882370AEF40091376E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Accounts.framework; sourceTree = DEVELOPER_DIR; };
 		F572F81A1EE0705B001BC814 /* CoronaNative.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CoronaNative.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,12 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB8A23BF2D0A9D38005B1A05 /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
-				DB8A23C02D0A9D38005B1A05 /* FBSDKCoreKit.xcframework in Frameworks */,
-				DB8A23C12D0A9D38005B1A05 /* FBSDKLoginKit.xcframework in Frameworks */,
-				DB8A23C22D0A9D38005B1A05 /* FBSDKGamingServicesKit.xcframework in Frameworks */,
-				DB8A23C32D0A9D38005B1A05 /* FBAEMKit.xcframework in Frameworks */,
-				DB8A23C42D0A9D38005B1A05 /* FBSDKShareKit.xcframework in Frameworks */,
+				091E300E6914F5925F9F5DA9 /* Pods_plugin_facebook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				F56B87882370AEF40091376E /* Accounts.framework */,
+				167E1423368743026B287F12 /* Pods_plugin_facebook.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,6 +81,15 @@
 			path = ../shared;
 			sourceTree = "<group>";
 		};
+		2A8C3F92D3800DFBB826E090 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32DBE47E41ED57A8B1E0F1D0 /* Pods-plugin_facebook.debug.xcconfig */,
+				1110CE2953F6A7AE013EE229 /* Pods-plugin_facebook.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A447B609165D72A6009EA762 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,17 +104,12 @@
 		A484110E15114F700074BD57 = {
 			isa = PBXGroup;
 			children = (
-				DB8A23B92D0A9D38005B1A05 /* FBAEMKit.xcframework */,
-				DB8A23BA2D0A9D38005B1A05 /* FBSDKCoreKit.xcframework */,
-				DB8A23BB2D0A9D38005B1A05 /* FBSDKCoreKit_Basics.xcframework */,
-				DB8A23BC2D0A9D38005B1A05 /* FBSDKGamingServicesKit.xcframework */,
-				DB8A23BD2D0A9D38005B1A05 /* FBSDKLoginKit.xcframework */,
-				DB8A23BE2D0A9D38005B1A05 /* FBSDKShareKit.xcframework */,
 				1C32EB1D203B222E00E81325 /* shared */,
 				A447B609165D72A6009EA762 /* Source */,
 				F54A40C01EE083A300AF417D /* CoronaNative */,
 				A484111A15114F700074BD57 /* Products */,
 				1C32EB06203B21D200E81325 /* Frameworks */,
+				2A8C3F92D3800DFBB826E090 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +136,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4E253BF166D6FB300DCDC2C /* Build configuration list for PBXNativeTarget "plugin_facebook" */;
 			buildPhases = (
+				451BDFB375F89278EAC1111A /* [CP] Check Pods Manifest.lock */,
 				C2E70B581EE9F110006E4570 /* Corona Native */,
 				A4E253B2166D6FB300DCDC2C /* Sources */,
 				A4E253B3166D6FB300DCDC2C /* Frameworks */,
@@ -185,6 +178,28 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		451BDFB375F89278EAC1111A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-plugin_facebook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C2E70B581EE9F110006E4570 /* Corona Native */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,7 +237,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F572F81A1EE0705B001BC814 /* CoronaNative.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -248,7 +263,9 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=*]" = armv7;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 $(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -268,8 +285,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PRIVATE_HEADERS_FOLDER_PATH = "$(inherited)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)/**";
 			};
 			name = Debug;
 		};
@@ -277,7 +297,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F572F81A1EE0705B001BC814 /* CoronaNative.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -303,6 +323,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXCLUDED_ARCHS = armv7;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 $(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -316,15 +337,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(inherited)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		A4E253C0166D6FB300DCDC2C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F572F81A1EE0705B001BC814 /* CoronaNative.xcconfig */;
+			baseConfigurationReference = 32DBE47E41ED57A8B1E0F1D0 /* Pods-plugin_facebook.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -332,25 +356,33 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DSTROOT = /tmp/plugin_library.dst;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/EmbeddedFrameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					BUCK,
 					"$(inherited)",
 				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"$(CORONA_ROOT)/Corona/shared/include/Corona\"",
+					"\"$(CORONA_ROOT)/Corona/shared/include/lua\"",
+					"\"$(CORONA_ROOT)/Corona/ios/include/Corona\"",
+					"\"../shared\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = plugin_facebook_v4a;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(inherited)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		A4E253C1166D6FB300DCDC2C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F572F81A1EE0705B001BC814 /* CoronaNative.xcconfig */;
+			baseConfigurationReference = 1110CE2953F6A7AE013EE229 /* Pods-plugin_facebook.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -358,18 +390,26 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DSTROOT = /tmp/plugin_library.dst;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/EmbeddedFrameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					BUCK,
 					"$(inherited)",
 				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"$(CORONA_ROOT)/Corona/shared/include/Corona\"",
+					"\"$(CORONA_ROOT)/Corona/shared/include/lua\"",
+					"\"$(CORONA_ROOT)/Corona/ios/include/Corona\"",
+					"\"../shared\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = plugin_facebook_v4a;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(inherited)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

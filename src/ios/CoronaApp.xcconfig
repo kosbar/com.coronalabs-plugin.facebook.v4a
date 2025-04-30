@@ -3,5 +3,7 @@
 
 // import Corona native location and basic settings
 #include "CoronaNative.xcconfig"
+#include "Pods/Target Support Files/Pods-Corona_Fb_App/Pods-Corona_Fb_App.debug.xcconfig"
 
 OTHER_LDFLAGS = $(inherited) $(CORONA_CUSTOM_LDFLAGS) -all_load -lplayer
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
