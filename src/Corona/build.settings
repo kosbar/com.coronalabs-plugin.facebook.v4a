@@ -38,6 +38,7 @@ settings =
 			FacebookDisplayName = "Corona_Test_App",
 			UILaunchStoryboardName = "LaunchScreen",
 			ITSAppUsesNonExemptEncryption = false, -- This sample doesn't use custom encryption
+			NSUserTrackingUsageDescription = "We collect this data to make ads more personalized, eliminate inappropriate ads, and improve the app experience.",
 			LSApplicationQueriesSchemes =
 			{
 				"fb",  -- Needed for the facebook-v4.isFacebookAppEnabled() API

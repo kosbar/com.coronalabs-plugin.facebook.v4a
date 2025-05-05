@@ -75,6 +75,7 @@ class IOSFBConnect : public FBConnect
 		virtual void DispatchInit( lua_State *L ) const;
 		virtual int GetSDKVersion( lua_State *L ) const;
         virtual int LogEvent( lua_State *L ) const;
+        virtual int SetTracking( lua_State *L ) const;
 
 	protected:
 		void LoginAppropriately( NSArray *permissions, bool limitedLogin ) const;
@@ -90,7 +91,7 @@ class IOSFBConnect : public FBConnect
 													 NSArray *peopleIds, NSString *placeId, NSString *ref ) const;
 		static FBSDKGameRequestActionType GetActionTypeFrom( NSString* actionTypeString );
 		static FBSDKGameRequestFilter GetFilterFrom( NSString* filterString );
-	
+
 	private:
 		id< CoronaRuntime > fRuntime;
 		id fConnectionDelegate;

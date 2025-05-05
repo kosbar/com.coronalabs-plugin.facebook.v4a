@@ -5,3 +5,4 @@
 #include "CoronaNative.xcconfig"
 
 OTHER_LDFLAGS = $(inherited) $(CORONA_CUSTOM_LDFLAGS) -all_load -lplayer
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64

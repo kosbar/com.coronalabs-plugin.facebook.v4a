@@ -27,6 +27,7 @@ display.getCurrentStage():insert( sampleUI.frontGroup )
 local json = require( "json" )
 local widget = require( "widget" )
 local facebook = require( "plugin.facebook.v4a" )
+local att = require("plugin.att")
 
 -- Set app font
 local appFont = sampleUI.appFont
@@ -52,6 +53,23 @@ local PUBLISH_INSTALL = 5
 local IS_FACEBOOK_APP_ENABLED = 6
 local LOGOUT = 7
 
+local status
+
+local status_list= {
+	["notDetermined"]= 0,
+	["restricted"]= 1,
+	["denied"]= 2,
+	["authorized"]= 3,
+	-- ["unavailable"]= nil
+}
+
+local function initAtt()
+	att.request( function( e )
+			print(att.getAdId())
+			print(att.status)
+			facebook.setTracking()
+		end)
+end
 
 -- Check for an item inside the provided table
 local function valueInTable( t, item )
@@ -255,10 +273,12 @@ local function buttonOnRelease( event )
 		requestedFBCommand = IS_FACEBOOK_APP_ENABLED
 		statusMessage.text = "Facebook app enabled: " .. tostring(facebook.isFacebookAppEnabled())
 		commandProcessedByFB = requestedFBCommand
-	else  -- Logout
+	elseif id == "Logout" then
 		requestedFBCommand = LOGOUT
 		facebook.logout()
 		commandProcessedByFB = requestedFBCommand
+	elseif id == "Settings" then
+		initAtt()
 	end
 	return true
 end
@@ -407,3 +427,19 @@ local logoutButton = widget.newButton(
 		onRelease = buttonOnRelease
 	})
 mainGroup:insert( logoutButton )
+
+local SettingsButton = widget.newButton(
+	{
+		label = "Settings",
+		id = "Settings",
+		shape = "rectangle",
+		x = display.contentCenterX,
+		y = 155,
+		width = 278,
+		height = 32,
+		font = appFont,
+		fontSize = 15,
+		fillColor = { default={ 0.12,0.32,0.52,1 }, over={ 0.12,0.32,0.52,1 } },
+		labelColor = { default={ 1,1,1,1 }, over={ 1,1,1,0.8 } },
+		onRelease = buttonOnRelease
+	})

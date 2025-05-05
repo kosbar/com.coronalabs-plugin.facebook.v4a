@@ -53,6 +53,7 @@ class FBConnect
 		virtual void DispatchInit( lua_State *L ) const = 0;
 		virtual int GetSDKVersion( lua_State *L ) const = 0;
         virtual int LogEvent( lua_State *L ) const = 0;
+        virtual int SetTracking( lua_State *L ) const = 0;
     
 
 	private:

@@ -17,6 +17,7 @@
 #import "CoronaLuaIOS.h"
 #import "CoronaRuntime.h"
 
+#import <Foundation/Foundation.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit-Swift.h>
@@ -26,7 +27,13 @@
 #import <Accounts/ACAccountStore.h>
 #import <Accounts/ACAccountType.h>
 
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+
 #import "CoronaDelegate.h"
+#import <AuthenticationServices/AuthenticationServices.h>
+#import <SafariServices/SafariServices.h>
+#import <FBSDKCoreKit/FBSDKCoreKit-Swift.h>
+
 
 // IOSFBConnectDelegate
 // ----------------------------------------------------------------------------
@@ -1243,9 +1250,18 @@ IOSFBConnect::LogEvent( lua_State *L ) const
         }else{
             CORONA_LOG_ERROR( "Invaild Params .logEvent(eventName, [eventParams, valueSum])" );
         }
-        
-        
     });
+    return 0;
+}
+
+int
+IOSFBConnect::SetTracking( lua_State *L ) const
+{
+    if (@available(iOS 14.0, *)) {
+        bool trackinEnabled = [ATTrackingManager trackingAuthorizationStatus] == ATTrackingManagerAuthorizationStatusAuthorized;
+        FBSDKSettings.sharedSettings.isAdvertiserTrackingEnabled = trackinEnabled;
+    }
+
     return 0;
 }
 

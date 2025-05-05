@@ -60,6 +60,7 @@ class FacebookLibrary
 		static int showDialog( lua_State *L );
 		static int getSDKVersion( lua_State *L );
         static int logEvent( lua_State *L );
+        static int setTracking( lua_State *L);
 
 	private:
 		static int ValueForKey( lua_State *L );
@@ -138,6 +139,7 @@ FacebookLibrary::Open( lua_State *L )
 		{ "showDialog", showDialog },
 		{ "getSDKVersion", getSDKVersion },
         { "logEvent", logEvent },
+        { "setTracking", setTracking },
 
 		{ NULL, NULL }
 	};
@@ -395,6 +397,16 @@ FacebookLibrary::logEvent( lua_State *L )
     Self *library = ToLibrary( L );
     FBConnect *connect = library->GetFBConnect();
     return connect->LogEvent( L );
+}
+
+int
+FacebookLibrary::setTracking( lua_State *L )
+{
+    Self *library = ToLibrary( L );
+    FBConnect *connect = library->GetFBConnect();
+    connect->SetTracking( L );
+
+    return 0;
 }
     
 
